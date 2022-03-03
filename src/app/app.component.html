@@ -1,1 +1,3 @@
-<app-two-way-data-binding-component></app-two-way-data-binding-component>
+<life-cycle [valorInicial]="valor" *ngIf="!deletarCiclo" class="text"></life-cycle>
+<button (click)="OnMudarValor()">Mudar Valor</button>
+<button (click)="DeletarCiclo()">Deletar Ciclo</button>
