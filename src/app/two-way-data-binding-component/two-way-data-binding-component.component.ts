@@ -16,6 +16,8 @@ export class TwoWayDataBindingComponentComponent implements OnInit {
     idade:20
   };
 
+
+  nomeDoCurso:string='angular';
   ngOnInit(): void {
   }
 

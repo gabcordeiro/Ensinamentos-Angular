@@ -23,8 +23,15 @@
         <div>
             <p>Meu nome é {{pessoa.nome}} e minha idade é de {{pessoa.idade}}</p>
             <input type="text" [(ngModel)]="pessoa.nome">
-            <input type="text" [(ngModel)]="pessoa.idade">
+            <input type="text" [(ngModel)]="pessoa.idade"> 
+        </div>
 
 
+        <br><br>
+        <div>
+            <app-curso-input
+            [nome]="nomeDoCurso"
+            >
+            </app-curso-input>
         </div>
 </article>
