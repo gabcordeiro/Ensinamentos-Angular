@@ -16,8 +16,14 @@ export class TwoWayDataBindingComponentComponent implements OnInit {
     idade:20
   };
 
+  valorInicial:number =15;
+  nomeDoCurso:string='Angular';
 
-  nomeDoCurso:string='angular';
+
+  onMudouValor(evento:any){
+    console.log(evento.novoValor);
+  }
+
   ngOnInit(): void {
   }
 

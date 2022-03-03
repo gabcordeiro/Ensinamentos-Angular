@@ -29,9 +29,22 @@
 
         <br><br>
         <div>
+    
             <app-curso-input
             [nome]="nomeDoCurso"
             >
             </app-curso-input>
         </div>
+
+        <br><br>
+
+        <div>
+            <contador [valor]="valorInicial"  
+            (mudouValor)="onMudouValor($event)">
+                
+            </contador>
+
+        </div>
+
+
 </article>
