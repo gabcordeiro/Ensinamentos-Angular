@@ -1,0 +1,31 @@
+<article>
+    <h3>Event Binding!!</h3>
+    <div>
+        <p>Voce tem {{frutas}} frutas.</p>
+        <button class="btn btn-primary"
+        (click)="AdicionarFrutas()"
+        >Clique para adicionar mais frutas!</button>
+        <br><br>
+        <button class="btn btn-primary"
+        (click)="RemoverFrutas()"
+        >Clique para remover as frutas!</button>
+        <br><br>
+        <p>Digite o numero de frutas:</p>
+        <input type="number" (keyup)="OnMudarFrutas($event)" name="" id="">
+        <br><br><br><br>
+        <p>Digite um texto e sera salvado com enter ou quando perder o foco:</p>
+        <input type="text" (keyup)="OnKeyUp($event)"
+        (keyup.enter)="salvarValor($any($event.target).value)"
+        (blur)="salvarValor(campoInput.value)"
+        #campoInput>
+        <br><br>
+        <p>Seu texto digitado na hora: {{textoDigitado}}</p>
+        <p>Seu texto digitado salvado: {{valorSalvo}}</p>
+        <br><br>
+        <p
+        (mouseover)="OnMouseOverOut()"
+        (mouseout)="OnMouseOverOut()"
+        [class.highlight]="isMouseOver"
+        >Passe o mouse sobre mim!</p>
+    </div>
+</article>

@@ -1,0 +1,30 @@
+<article>
+    <h3>Two Way Data Binding!!!!</h3>
+        <div>
+            <p>binding por eventos $any($event.target).value</p>
+            <input type="text"
+            [value]="nome"
+            (input)="nome = $any($event.target).value"
+            />
+            <p>binding por eventos com uma variavel #valorInput</p>
+            <input type="text" #valorInput
+            [value]="nome"
+            (input)="nome = valorInput.value"
+           />    
+            <p>binding de propriedade com binding de evento [(ngModel)] - two way data binding</p>
+            <input type="text"  [(ngModel)]="nome">
+            <p>por tras do panos bindon-ngModel - two way data binding</p>
+            <input type="text"  bindon-ngModel="nome">
+            <br><br>
+            <p>Voce digitou o nome: {{nome}}</p>
+        </div>
+
+
+        <div>
+            <p>Meu nome é {{pessoa.nome}} e minha idade é de {{pessoa.idade}}</p>
+            <input type="text" [(ngModel)]="pessoa.nome">
+            <input type="text" [(ngModel)]="pessoa.idade">
+
+
+        </div>
+</article>

@@ -1,0 +1,50 @@
+<section class="property-binding">
+    <article>
+        <h3>Interpolação</h3>
+        <p>String realizada com a Interpolação:{{ url }} </p>
+        <p>A Interpolação faz mais do que aparecer uma variavel, opr exemplo, o resultado de 1+1 é: {{1+1}}</p>
+        <p>O resultado de 1+1 não é {{1+1+getValor()}}</p>      
+    </article>
+
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{  urlImagem  }}" alt="" srcset="">
+        <img [src]="urlImagem" alt="" srcset="">
+    </article>
+
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>Selecione uma classe:
+            <select #classe (change)="0">
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Medo</option>
+                <option value="alert-danger">Perigo</option>
+            </select>
+        </div>
+        <br><br>
+
+
+        <div class="alert {{ classe.value }}" role="alert">
+            Texto colorido conforma valor do combobox.
+        </div>
+        
+        <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'" 
+        >Este texto so vai aparecer com o erro!</div>
+
+        <div class="alert" role="alert"
+        [class.alert-success]="classe.value == 'alert-success'"
+        >Sucesso</div>
+        <div class="alert" role="alert"
+        [class.alert-info]="classe.value=='alert-info'"
+        >Info</div>
+        <div class="alert" role="alert"
+        [class.alert-warning]="classe.value == 'alert-warning'"
+        >Medo</div>
+        <div class="alert" role="alert"
+        [class.alert-danger]="classe.value=='alert-danger'"
+        >Perigo</div>
+
+
+    </article>
+</section>
