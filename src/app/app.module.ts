@@ -10,6 +10,7 @@ import { ClassAndStyleBindingComponent } from './class-and-style-binding/class-a
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { ComponentLifeCycleComponent } from './component-life-cycle/component-life-cycle.component';
+import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ComponentLifeCycleComponent } from './component-life-cycle/component-li
     InputPropertyComponent,
     OutputPropertyComponent,
     ComponentLifeCycleComponent,
+    DiretivaNgifComponent,
   ],
   imports: [
     BrowserModule,
