@@ -1,0 +1,14 @@
+<h1>
+    <i class="glyphicon"
+    [class.glyphicon-star]="meuFavorito"
+    [class.glyphicon-star-empty]="!meuFavorito"
+    (click)="OnClick()"
+    ></i>
+
+    <i class="glyphicon"
+    [ngClass]="{'glyphicon-star':meuFavorito,
+    'glyphicon-star-empty':!meuFavorito
+    }" 
+    (click)="OnClick()"
+    ></i>    
+</h1>

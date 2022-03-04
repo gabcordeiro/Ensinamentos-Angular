@@ -13,6 +13,7 @@ import { ComponentLifeCycleComponent } from './component-life-cycle/component-li
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
+import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
     DiretivaNgifComponent,
     DiretivaNgSwitchComponent,
     DiretivaNgforComponent,
+    DiretivaNgclassComponent,
   ],
   imports: [
     BrowserModule,
