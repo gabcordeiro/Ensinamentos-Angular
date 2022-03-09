@@ -25,6 +25,7 @@ import { GuiViewpanelFuncionarioComponent } from './gui-viewpanel-funcionario/gu
 import { GuiViewpanelPageComponent } from './gui-viewpanel-page/gui-viewpanel-page.component';
 import { BancoFuncionarioDirectiveDirective } from './shared/banco-funcionario-directive.directive';
 import { ExemploPipesComponent } from './exemplo-pipes/exemplo-pipes.component';
+import { CamelCasePipe } from './camel-case.pipe';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ExemploPipesComponent } from './exemplo-pipes/exemplo-pipes.component';
     GuiViewpanelPageComponent,
     BancoFuncionarioDirectiveDirective,
     ExemploPipesComponent,
+    CamelCasePipe,
   ],
   imports: [
     BrowserModule,
