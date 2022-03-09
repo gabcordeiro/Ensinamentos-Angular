@@ -8,4 +8,4 @@ Estudando para desenvolvimento Web MEAN Stack, atualmente acompanhando essas pla
 
 Print do site feito no dia 8/3/2022
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/gabcordeiro/Ensinamentos-Angular/blob/master/src/app/gui-viewpanel-page/Screenshot%202022-03-08%20215814.jpg)
