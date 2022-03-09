@@ -20,6 +20,10 @@ import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-conte
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
+import { HighlightDirective } from './shared//highlight.directive';
+import { GuiViewpanelFuncionarioComponent } from './gui-viewpanel-funcionario/gui-viewpanel-funcionario.component';
+import { GuiViewpanelPageComponent } from './gui-viewpanel-page/gui-viewpanel-page.component';
+import { BancoFuncionarioDirectiveDirective } from './shared/banco-funcionario-directive.directive';
 
 @NgModule({
   declarations: [
@@ -40,6 +44,10 @@ import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
     FundoAmareloDirective,
     DiretivasCustomizadasComponent,
     HighlightMouseDirective,
+    HighlightDirective,
+    GuiViewpanelFuncionarioComponent,
+    GuiViewpanelPageComponent,
+    BancoFuncionarioDirectiveDirective,
   ],
   imports: [
     BrowserModule,

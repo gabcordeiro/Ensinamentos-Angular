@@ -1,0 +1,43 @@
+
+
+    
+
+    <div class="panel panel-default">
+        
+
+
+            
+        <div class="page-header">
+            <h1>Pagina de funcionarios <small>Kord empreendimentos</small></h1>
+        </div>
+
+        
+        <div class="row">
+            <div class="panel-heading">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                    <input #nomeCompletoInput type="text" class="form-control" placeholder="Nome Completo">
+                    <input #idadeInput type="text" class="form-control" placeholder="Idade">
+                    <input #funcaoInput type="text" class="form-control" placeholder="Funcao">
+                    </div>
+                    <button type="submit" class="btn btn-default" 
+                    (click)="AdicionarFuncionario(nomeCompletoInput.value,idadeInput.value,
+                    funcaoInput.value)">Adicionar Funcionario</button>
+                </form>
+            </div>        
+        </div>
+
+
+                <div class="panel-body">
+                    <app-gui-viewpanel-funcionario *ngFor="let funcionario of bancoFuncionarios, let i = index"  
+                    [nomeCompleto]="funcionario.nomeCompleto"
+                    [idade]="funcionario.idade.toString()"
+                    [funcao]="funcionario.funcao"
+                    [foto]="funcionario.fotoUsuario"
+                    [index]="i"
+                    (eventoDeletar)="RemoverFuncionario($event)"
+                    >
+                    </app-gui-viewpanel-funcionario>
+                </div>
+    </div>
+  
